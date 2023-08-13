@@ -1,0 +1,25 @@
+<div class="container">
+  <h1><%= @flat.name %></h1>
+  <p>
+    <strong ><%= @flat.address %></strong>
+  </p>
+</div>
+
+<div class="container">
+  <h3>A bit more about this flat...</h3>
+  <p>
+    <strong ><%= @flat.description %></strong>
+  </p>
+</div>
+
+<div class="container">
+  <h2>Details</h2>
+  <p><%= @flat.number_of_guests %> people | SGD <%= @flat.price_per_night %></p>
+</div>
+
+<div class="container">
+  <h2>Book this place!</h2>
+
+</div>
+
+<div class="container"><%= link_to "Back", flats_path %></div>

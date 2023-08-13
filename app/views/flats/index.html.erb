@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="container">
+    <% @flats.each do |flat| %>
+      <h1><%= flat.name %></h1>
+      <p><%= flat.address %></p>
+      <div><%= flat.number_of_guests %> Guest(s) | SGD <%= flat.price_per_night %></div>
+      <div class="flat-card-actions">
+        <%= link_to "More info", flat_path(flat), class: "link-primary"  %>
+        <%= link_to "Edit", class: "link-warning" %>
+        <%= link_to "Remove", class: "link-danger" %>
+      </div>
+      <% end %>
+
+  </div>
+</div>
